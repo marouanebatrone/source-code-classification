@@ -39,11 +39,11 @@ def _clean_code(text: str) -> str:
 
 def run(limit: int = LIMIT):
     genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
-    model       = genai.GenerativeModel("gemini-1.5-flash")
+    model       = genai.GenerativeModel("gemini-3-flash-preview")
     hdfs_client = get_hdfs_client()
     hdfs_client.makedirs(HDFS_DEST)
 
-    generated = 0
+    generated = 10
     while generated < limit:
         topic  = TOPICS[generated % len(TOPICS)]
         prompt = (
