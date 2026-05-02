@@ -1,0 +1,17 @@
+.env
+
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+ai_detection_db/
+extracted_features.csv
+*.h5
+*.pkl
+
+.ipynb_checkpoints/
+
+.DS_Store
+Thumbs.db
