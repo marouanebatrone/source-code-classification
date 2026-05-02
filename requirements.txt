@@ -1,0 +1,17 @@
+python-dotenv
+
+requests
+hdfs
+
+google-generativeai
+
+torch
+transformers
+
+pyspark
+
+chromadb
+
+scikit-learn
+pandas
+numpy
