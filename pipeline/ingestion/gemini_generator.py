@@ -43,7 +43,7 @@ def run(limit: int = LIMIT):
     hdfs_client = get_hdfs_client()
     hdfs_client.makedirs(HDFS_DEST)
 
-    generated = 10
+    generated = 0
     while generated < limit:
         topic  = TOPICS[generated % len(TOPICS)]
         prompt = (
